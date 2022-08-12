@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Statistics from 'components/Statistics/Statistics';
 import FeedbackOptions from 'components/FeedbackOptions/FeedbackOptions';
 import { Notification } from 'components/Notification/Notification';
@@ -64,5 +66,17 @@ class Feedback extends React.Component {
     );
   }
 }
+
+Feedback.propTypes = {
+  handleGood: PropTypes.any,
+  handleNeutral: PropTypes.any,
+  handleBad: PropTypes.any,
+  good: PropTypes.number,
+  neutral: PropTypes.number,
+  bad: PropTypes.number,
+  total: PropTypes.number,
+  positivePercentage: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  message: PropTypes.string,
+};
 
 export default Feedback;
