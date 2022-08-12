@@ -32,7 +32,7 @@ class Feedback extends React.Component {
     return good + neutral + bad;
   };
 
-  positivePercentage = () => {
+  countPositiveFeedbackPercentage = () => {
     return parseInt((this.state.good / this.totalFeedback()) * 100);
   };
 
@@ -54,7 +54,7 @@ class Feedback extends React.Component {
               neutral={this.state.neutral}
               bad={this.state.bad}
               total={this.totalFeedback()}
-              positivePercentage={this.positivePercentage()}
+              positivePercentage={this.countPositiveFeedbackPercentage()}
             />
           </Section>
         ) : (
