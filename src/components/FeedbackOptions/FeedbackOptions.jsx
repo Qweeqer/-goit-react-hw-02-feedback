@@ -11,10 +11,10 @@ const FeedbackOptions = ({ handleGood, handleNeutral, handleBad }) => (
   </div>
 );
 
-Notification.propTypes = {
-  handleGood: PropTypes.string,
-  handleNeutral: PropTypes.string,
-  handleBad: PropTypes.string,
+FeedbackOptions.propTypes = {
+  handleGood: PropTypes.any,
+  handleNeutral: PropTypes.any,
+  handleBad: PropTypes.any,
 };
 
 export default FeedbackOptions;
