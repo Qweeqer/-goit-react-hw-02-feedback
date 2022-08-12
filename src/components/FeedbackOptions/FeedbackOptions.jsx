@@ -9,4 +9,5 @@ const FeedbackOptions = ({ handleGood, handleNeutral, handleBad }) => (
   </div>
 );
 
+
 export default FeedbackOptions;
