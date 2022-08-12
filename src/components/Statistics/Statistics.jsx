@@ -19,4 +19,5 @@ Statistics.prototype = {
   positivePercentage: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
+
 export default Statistics;
