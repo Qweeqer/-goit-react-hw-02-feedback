@@ -13,9 +13,6 @@ const FeedbackOptions = ({ options, onBtnClick }) => {
           </button>
         );
       })}
-      {/* <button onClick={handleGood}>Good</button>
-    <button onClick={handleNeutral}>Neutral</button>
-    <button onClick={handleBad}>Bad</button> */}
     </div>
   );
 };
@@ -23,9 +20,6 @@ const FeedbackOptions = ({ options, onBtnClick }) => {
 FeedbackOptions.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
   onBtnClick: PropTypes.func.isRequired,
-  // handleGood: PropTypes.any,
-  // handleNeutral: PropTypes.any,
-  // handleBad: PropTypes.any,
 };
 
 export default FeedbackOptions;
