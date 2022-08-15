@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 
 import Statistics from 'components/Statistics/Statistics';
 import FeedbackOptions from 'components/FeedbackOptions/FeedbackOptions';
@@ -19,22 +18,6 @@ class Feedback extends React.Component {
     }));
   };
 
-  //   handleGood = () => {
-  //     this.setState({
-  //       good: this.state.good + 1,
-  //     });
-  //   };
-  //   handleNeutral = () => {
-  //     this.setState({
-  //       neutral: this.state.neutral + 1,
-  //     });
-  //   };
-  //   handleBad = () => {
-  //     this.setState({
-  //       bad: this.state.bad + 1,
-  //     });
-  //   };
-
   totalFeedback = () => {
     const { good, neutral, bad } = this.state;
     return good + neutral + bad;
@@ -51,9 +34,6 @@ class Feedback extends React.Component {
           <FeedbackOptions
             options={Object.keys(this.state)}
             onBtnClick={this.onBtnClick}
-            // handleGood={this.handleGood}
-            // handleNeutral={this.handleNeutral}
-            // handleBad={this.handleBad}
           />
         </Section>
 
@@ -74,9 +54,5 @@ class Feedback extends React.Component {
     );
   }
 }
-
-// Feedback.propTypes = {
-
-// };
 
 export default Feedback;
